@@ -14,6 +14,7 @@
 - 🧱 BP associée : réduire taille des ressources / lazy-loading
 - 🛠️ KPI : LCP sur web (Lighthouse)
 - 📅 Tag roadmap : M2
+- Priorité : 1
 
 ---
 
@@ -27,6 +28,7 @@
 - 🧱 BP associée : compression d’images / formats modernes
 - 🛠️ KPI : poids total dossier `/assets` < 2 Mo
 - 📅 Tag roadmap : M3
+- Priorité : 2
 
 ---
 
@@ -40,6 +42,7 @@
 - 🧱 BP associée : respect contrastes (RGESN 6.3)
 - 🛠️ KPI : score accessibilité Lighthouse > 90
 - 📅 Tag roadmap : M4
+- Priorité : 3
 
 ...
 
