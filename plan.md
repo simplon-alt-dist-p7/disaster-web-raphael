@@ -12,9 +12,9 @@ Modifications prévues : compresser et convertir les images utilisées dans un f
 
 Modifications prévues : suppression de l'animation du texte
 
-## Etape 3 - User story 8 (Téléchargement de Bootstrap en local)
+## Etape 3 - User story 8 (Centraliser le style CSS)
 
-Modifications prévues : installation de Bootstrap en local et intégration dans le projet au lieu du CDN
+Modifications prévues : récupérer le contenu de la feuille de style big.css pour l'intégrer directement à index.css
 
 ## Etape 4 - User story 6 (Réduction du nombre de polices chargées)
 

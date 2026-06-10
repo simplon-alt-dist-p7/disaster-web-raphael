@@ -97,13 +97,13 @@
 
 ---
 
-### Story 8 : Téléchargement de Bootstrap en local
+### Story 8 : Centraliser le style CSS
 
 **En tant que** développeur de l'application,  
-**je veux** télécharger la librairie Bootstrap
-**afin de** réduire le nombre d'appels externes à l'application.
+**je veux** centraliser le style CSS du frontend en un seul endroit
+**afin de** réduire le nombre d'appels au backend.
 
-- 🎯 Objectif : réduire les appels externes à l'application
-- 🧱 BP associée : limiter la quantité de style externe appelé
-- 🛠️ KPI : réduction des appels externes
+- 🎯 Objectif : réduire les appels au backend
+- 🧱 BP associée : limiter les injections du backend sur le frontend
+- 🛠️ KPI : réduction des injections backend
 - Priorité : 3
