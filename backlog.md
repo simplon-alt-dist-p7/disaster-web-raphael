@@ -72,14 +72,14 @@
 
 ---
 
-### Story 6 : Réduction du nombre de polices chargées
-**En tant que** développeur de l'application,  
-**je veux** réduire le nombre de polices chargés dans l'application
-**afin de** diminuer le poids du style.
+### Story 6 : Réduction du nombre d'animation et hover
+**En tant que** utilisateur régulier,  
+**je veux** qu'il y ait moins d'animation et de hover
+**afin de** améliorer mon expérience.
 
-- 🎯 Objectif : réduire le nombre de polices d'écriture
-- 🧱 BP associée : limiter le nombre des polices à celles qui sont importantes 
-- 🛠️ KPI : réduction des appels externes
+- 🎯 Objectif : réduire le nombre d'animation dans la page
+- 🧱 BP associée : limiter les éléments distrayant et inutiles
+- 🛠️ KPI : réduction des éléments dynamiques
 - Priorité : 4
 
 ---

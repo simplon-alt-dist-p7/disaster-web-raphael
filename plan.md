@@ -16,9 +16,9 @@ Modifications prévues : suppression de l'animation du texte
 
 Modifications prévues : déplacer la feuille de style big.css au même endroit que index.css
 
-## Etape 4 - User story 6 (Réduction du nombre de polices chargées)
+## Etape 4 - User story 6 (Réduction du nombre d'animation et hover)
 
-Modifications prévues : voir quelles sont les polices d'écriture utilisé pour le projet et supprimer celles qui ne le sont pas dans les feuilles de style.
+Modifications prévues : retirer les hover sur les div et réduire l'animation
 
 ## Etape 5 - User story 7 (Téléchargements des polices d'écriture)
 

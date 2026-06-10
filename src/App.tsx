@@ -296,7 +296,7 @@ export default function App() {
 
 function Card({ icon, title, value, tone, tip }: { icon: React.ReactNode; title: string; value: string | number; tone: string; tip?: string }) {
   return (
-    <div className={`backdrop-blur-lg rounded-2xl p-8 border hover:bg-white/15 hover:scale-105 transition ${tone}`} title={tip || ''}>
+    <div className={`backdrop-blur-lg rounded-2xl p-8 border transition ${tone}`} title={tip || ''}>
       <div className="flex items-center justify-between mb-4">
         {icon}
         <span className="text-3xl font-bold text-white">{value}</span>

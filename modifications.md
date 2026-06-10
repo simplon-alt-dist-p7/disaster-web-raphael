@@ -21,3 +21,11 @@ Maintenant :
 
 ## Etape 3 
 Feuille de style big.css déplacé au même endroit que index.css et import depuis le backend supprimé (mis en commentaire)
+
+## Etape 4
+Dans App.tsx, retrait de classes dans la Card.
+Avant :
+'<div className={`backdrop-blur-lg rounded-2xl p-8 border hover:bg-white/15 hover:scale-105 transition ${tone}`} title={tip || ''}>'
+
+Maintenant :
+'<div className={`backdrop-blur-lg rounded-2xl p-8 border `} title={tip || ''}>'
