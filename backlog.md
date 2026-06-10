@@ -42,7 +42,7 @@
 - 🧱 BP associée : respect contrastes (RGESN 6.3)
 - 🛠️ KPI : score accessibilité Lighthouse > 90
 - 📅 Tag roadmap : M4
-- Priorité : 5
+- Priorité : 6
 
 ---
 
@@ -55,7 +55,7 @@
 - 🎯 Objectif : suppression des animations sur les textes 
 - 🧱 BP associée : choix plus sobres pour texte (RGESN 4.7)
 - 🛠️ KPI : réduction poids visuel
-- Priorité : 3
+- Priorité : 4
 
 ---
 
@@ -68,6 +68,19 @@
 - 🎯 Objectif : réduction des animations sur les cubes
 - 🧱 BP associée : choix plus sobres pour texte (RGESN 4.7)
 - 🛠️ KPI : réduction poid visuel
-- Priorité : 4
+- Priorité : 5
+
+---
+
+### Story 6 : Téléchargements des polices d'écriture
+
+**En tant que** développeur de l'application,  
+**je veux** télécharger les polices utilisés
+**afin de** réduire le nombre d'appels externes à l'application.
+
+- 🎯 Objectif : réduire les appels externes à l'application
+- 🧱 BP associée : limiter le nombre des polices de caractères téléchargés (RGESN 4.8)
+- 🛠️ KPI : réduction des appels externes
+- Priorité : 3
 
 ---
