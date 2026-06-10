@@ -132,10 +132,10 @@ export default function App() {
     injectedRef.current = true
     const loadAssets = () => {
       const h = document.head
-      const link = document.createElement('link')
-      link.rel = 'stylesheet'
-      link.href = 'http://localhost:5001/static/big.css'
-      h.appendChild(link)
+      // const link = document.createElement('link')
+      // link.rel = 'stylesheet'
+      // link.href = 'http://localhost:5001/static/big.css'
+      // h.appendChild(link)
       const script = document.createElement('script')
       script.src = 'http://localhost:5001/static/big.js'
       script.crossOrigin = 'anonymous'

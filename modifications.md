@@ -17,3 +17,7 @@ Maintenant :
 '<h1 className="text-6xl font-bold">
     EcoTraining Platform
 </h1>'
+
+
+## Etape 3 
+Feuille de style big.css déplacé au même endroit que index.css et import depuis le backend supprimé (mis en commentaire)

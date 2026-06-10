@@ -1,7 +1,7 @@
-const link = document.createElement("link");
-link.rel = "stylesheet";
-link.href = "http://localhost:5001/static/big.css";
-document.head.appendChild(link);
+// const link = document.createElement("link");
+// link.rel = "stylesheet";
+// link.href = "http://localhost:5001/static/big.css";
+// document.head.appendChild(link);
 
 const junk = Array.from({ length: 4096 }, () =>
   "junk".repeat(2048)
