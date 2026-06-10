@@ -256,7 +256,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
       <div className="fixed inset-0 opacity-10 pointer-events-none">
-        <img src="http://localhost:5001/static/large.jpg" className="absolute inset-0 w-full h-full object-cover mix-blend-overlay" />
+        <img src="http://localhost:5001/static/large.webp" className="absolute inset-0 w-full h-full object-cover mix-blend-overlay" />
       </div>
       <div className="relative z-10 container mx-auto px-6 py-12">
         <header className="text-center mb-16">

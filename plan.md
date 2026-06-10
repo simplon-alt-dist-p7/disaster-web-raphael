@@ -16,7 +16,6 @@ Modifications prévues : suppression de l'animation du texte
 
 Modifications prévues : installation de Bootstrap en local et intégration dans le projet au lieu du CDN
 
-
 ## Etape 4 - User story 6 (Réduction du nombre de polices chargées)
 
 Modifications prévues : voir quelles sont les polices d'écriture utilisé pour le projet et supprimer celles qui ne le sont pas dans les feuilles de style.
@@ -32,8 +31,6 @@ Modifications prévues : réduire le nombre d'animations utilisées sur la page.
 ## Etape 7 - User story 1 (Chargement initial plus rapide)
 
 Modifications à faire : réduire la taille des ressources et le nombre d'appels effectués / lazy-loading
-
-
 
 ## Etape 8 - User story 3 (Accessibilité améliorée)
 
