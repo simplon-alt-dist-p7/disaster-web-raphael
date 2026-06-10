@@ -42,7 +42,7 @@
 - 🧱 BP associée : respect contrastes (RGESN 6.3)
 - 🛠️ KPI : score accessibilité Lighthouse > 90
 - 📅 Tag roadmap : M4
-- Priorité : 4
+- Priorité : 5
 
 ---
 
@@ -68,6 +68,6 @@
 - 🎯 Objectif : réduction des animations sur les cubes
 - 🧱 BP associée : choix plus sobres pour texte (RGESN 4.7)
 - 🛠️ KPI : réduction poid visuel
-- Priorité : 3
+- Priorité : 4
 
 ---
