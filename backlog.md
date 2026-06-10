@@ -14,6 +14,7 @@
 - 🧱 BP associée : réduire taille des ressources / lazy-loading
 - 🛠️ KPI : LCP sur web (Lighthouse)
 - 📅 Tag roadmap : M2
+- Priorité : 7
 
 ---
 
@@ -27,6 +28,7 @@
 - 🧱 BP associée : compression d’images / formats modernes
 - 🛠️ KPI : poids total dossier `/assets` < 2 Mo
 - 📅 Tag roadmap : M3
+- Priorité : 1
 
 ---
 
@@ -40,7 +42,68 @@
 - 🧱 BP associée : respect contrastes (RGESN 6.3)
 - 🛠️ KPI : score accessibilité Lighthouse > 90
 - 📅 Tag roadmap : M4
-
-...
+- Priorité : 8
 
 ---
+
+### Story 4 : Clignotement du texte retiré
+
+**En tant que** utilisateur souffrant d'épilépsie,  
+**je veux** que le clignotement du texte soit supprimé 
+**afin de** pouvoir utiliser l’app sans difficulté visuelle.
+
+- 🎯 Objectif : suppression des animations sur les textes 
+- 🧱 BP associée : choix plus sobres pour texte (RGESN 4.7)
+- 🛠️ KPI : réduction poids visuel
+- Priorité : 2
+
+---
+
+### Story 5 : Animation réduite
+
+**En tant que** utilisateur régulier,  
+**je veux** que le nombre de cubes animés soit diminué
+**afin de** pouvoir utiliser l’app lors d'un pic de réseau plus lent.
+
+- 🎯 Objectif : réduction des animations sur les cubes
+- 🧱 BP associée : choix plus sobres pour texte (RGESN 4.7)
+- 🛠️ KPI : réduction poid visuel
+- Priorité : 6
+
+---
+
+### Story 6 : Réduction du nombre de polices chargées
+**En tant que** développeur de l'application,  
+**je veux** réduire le nombre de polices chargés dans l'application
+**afin de** diminuer le poids du style.
+
+- 🎯 Objectif : réduire le nombre de polices d'écriture
+- 🧱 BP associée : limiter le nombre des polices à celles qui sont importantes 
+- 🛠️ KPI : réduction des appels externes
+- Priorité : 4
+
+---
+
+### Story 7 : Téléchargements des polices d'écriture
+
+**En tant que** développeur de l'application,  
+**je veux** télécharger les polices utilisés
+**afin de** réduire le nombre d'appels externes à l'application.
+
+- 🎯 Objectif : réduire les appels externes à l'application
+- 🧱 BP associée : limiter le nombre des polices de caractères téléchargés (RGESN 4.8)
+- 🛠️ KPI : réduction des appels externes
+- Priorité : 5
+
+---
+
+### Story 8 : Téléchargement de Bootstrap en local
+
+**En tant que** développeur de l'application,  
+**je veux** télécharger la librairie Bootstrap
+**afin de** réduire le nombre d'appels externes à l'application.
+
+- 🎯 Objectif : réduire les appels externes à l'application
+- 🧱 BP associée : limiter la quantité de style externe appelé
+- 🛠️ KPI : réduction des appels externes
+- Priorité : 3
