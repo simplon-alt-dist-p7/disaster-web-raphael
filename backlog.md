@@ -42,8 +42,32 @@
 - 🧱 BP associée : respect contrastes (RGESN 6.3)
 - 🛠️ KPI : score accessibilité Lighthouse > 90
 - 📅 Tag roadmap : M4
+- Priorité : 4
+
+---
+
+### Story 4 : Clignotement du texte retiré
+
+**En tant que** utilisateur souffrant d'épilépsie,  
+**je veux** que le clignotement du texte soit supprimé 
+**afin de** pouvoir utiliser l’app sans difficulté visuelle.
+
+- 🎯 Objectif : suppression des animations sur les textes 
+- 🧱 BP associée : choix plus sobres pour texte (RGESN 4.7)
+- 🛠️ KPI : réduction poids visuel
 - Priorité : 3
 
-...
+---
+
+### Story 5 : Animation réduite
+
+**En tant que** utilisateur régulier,  
+**je veux** que le nombre de cubes animés soit diminué
+**afin de** pouvoir utiliser l’app lors d'un pic de réseau plus lent.
+
+- 🎯 Objectif : réduction des animations sur les cubes
+- 🧱 BP associée : choix plus sobres pour texte (RGESN 4.7)
+- 🛠️ KPI : réduction poid visuel
+- Priorité : 3
 
 ---
