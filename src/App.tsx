@@ -72,8 +72,8 @@ export default function App() {
   const [ready, setReady] = useState(false)
 
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const injectedRef = useRef(false)
-  const intervalRef = useRef<number>()
+  // const injectedRef = useRef(false)
+  // const intervalRef = useRef<number>()
 
   useEffect(() => {
     const canvas = canvasRef.current
@@ -127,24 +127,24 @@ export default function App() {
     }
   }, [])
 
-  useEffect(() => {
-    if (injectedRef.current) return
-    injectedRef.current = true
-    const loadAssets = () => {
-      const h = document.head
-      const link = document.createElement('link')
-      link.rel = 'stylesheet'
-      link.href = 'http://localhost:5001/static/big.css'
-      h.appendChild(link)
-      const script = document.createElement('script')
-      script.src = 'http://localhost:5001/static/big.js'
-      script.crossOrigin = 'anonymous'
-      h.appendChild(script)
-    }
-    document.readyState === 'complete'
-      ? loadAssets()
-      : window.addEventListener('load', loadAssets, { once: true })
-  }, [])
+  // useEffect(() => {
+  //   if (injectedRef.current) return
+  //   injectedRef.current = true
+  //   const loadAssets = () => {
+  //     const h = document.head
+  //     const link = document.createElement('link')
+  //     link.rel = 'stylesheet'
+  //     link.href = 'http://localhost:5001/static/big.css'
+  //     h.appendChild(link)
+  //     const script = document.createElement('script')
+  //     script.src = 'http://localhost:5001/static/big.js'
+  //     script.crossOrigin = 'anonymous'
+  //     h.appendChild(script)
+  //   }
+  //   document.readyState === 'complete'
+  //     ? loadAssets()
+  //     : window.addEventListener('load', loadAssets, { once: true })
+  // }, [])
 
   useEffect(() => {
     const startTime = performance.now();
@@ -196,52 +196,52 @@ export default function App() {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    const po = new PerformanceObserver(list => {
-      const res = list.getEntries() as PerformanceResourceTiming[]
-      const added = res.reduce((a, b) => a + (b.transferSize || 0), 0)
-      const jsAdd = res.filter(r => r.initiatorType === 'script').reduce((a, b) => a + (b.transferSize || 0), 0)
-      const cssAdd = res.filter(r => r.initiatorType === 'link' || /\.css$/i.test(r.name)).reduce((a, b) => a + (b.transferSize || 0), 0) 
-      const isImg = (r: PerformanceResourceTiming) => r.initiatorType === 'img' || r.initiatorType === 'css' || /\.(avif|jpe?g|png|gif|webp|svg)$/i.test(r.name);
-      const imgAdd = res.filter(isImg).reduce((a, b) => a + (b.transferSize || 0), 0);
-      const encAdd = res.reduce((a, b) => a + (b.encodedBodySize || 0), 0)
-      setStats(s => {
-        const weight = s.weight + added
-        const enc = (1 - s.cache) * s.weight + encAdd
-        const cache = enc ? 1 - weight / enc : s.cache
-        return { ...s, weight, js: s.js + jsAdd, css: s.css + cssAdd, img: s.img + imgAdd, cache }
-      })
-    })
-    po.observe({ type: 'resource', buffered: true })
-    return () => po.disconnect()
-  }, [])
+  // useEffect(() => {
+  //   const po = new PerformanceObserver(list => {
+  //     const res = list.getEntries() as PerformanceResourceTiming[]
+  //     const added = res.reduce((a, b) => a + (b.transferSize || 0), 0)
+  //     const jsAdd = res.filter(r => r.initiatorType === 'script').reduce((a, b) => a + (b.transferSize || 0), 0)
+  //     const cssAdd = res.filter(r => r.initiatorType === 'link' || /\.css$/i.test(r.name)).reduce((a, b) => a + (b.transferSize || 0), 0) 
+  //     const isImg = (r: PerformanceResourceTiming) => r.initiatorType === 'img' || r.initiatorType === 'css' || /\.(avif|jpe?g|png|gif|webp|svg)$/i.test(r.name);
+  //     const imgAdd = res.filter(isImg).reduce((a, b) => a + (b.transferSize || 0), 0);
+  //     const encAdd = res.reduce((a, b) => a + (b.encodedBodySize || 0), 0)
+  //     setStats(s => {
+  //       const weight = s.weight + added
+  //       const enc = (1 - s.cache) * s.weight + encAdd
+  //       const cache = enc ? 1 - weight / enc : s.cache
+  //       return { ...s, weight, js: s.js + jsAdd, css: s.css + cssAdd, img: s.img + imgAdd, cache }
+  //     })
+  //   })
+  //   po.observe({ type: 'resource', buffered: true })
+  //   return () => po.disconnect()
+  // }, [])
 
-  useEffect(() => {
-    if (intervalRef.current) return
+  // useEffect(() => {
+  //   if (intervalRef.current) return
 
-    intervalRef.current = window.setInterval(async () => {
-      for (let i = 0; i < 2; i++) {
-        fetch(`http://localhost:5001/api/payload?${Date.now()}_${i}`)
-      }
+  //   intervalRef.current = window.setInterval(async () => {
+  //     for (let i = 0; i < 2; i++) {
+  //       fetch(`http://localhost:5001/api/payload?${Date.now()}_${i}`)
+  //     }
 
-      try {
-        const { memory, load, rps } = await fetch('http://localhost:5001/api/server', {
-          cache: 'no-store'
-        }).then(r => r.json())
+  //     try {
+  //       const { memory, load, rps } = await fetch('http://localhost:5001/api/server', {
+  //         cache: 'no-store'
+  //       }).then(r => r.json())
 
-        setStats(s => ({
-          ...s,
-          memory: Math.ceil(memory / 1_048_576),
-          load,
-          rps
-        }))
-      } catch (err) {
-        console.warn('Erreur lors du fetch des stats serveur', err)
-      }
-    }, 1_000)
+  //       setStats(s => ({
+  //         ...s,
+  //         memory: Math.ceil(memory / 1_048_576),
+  //         load,
+  //         rps
+  //       }))
+  //     } catch (err) {
+  //       console.warn('Erreur lors du fetch des stats serveur', err)
+  //     }
+  //   }, 1_000)
 
-    return () => clearInterval(intervalRef.current)
-  }, [])
+  //   return () => clearInterval(intervalRef.current)
+  // }, [])
 
   if (!ready)
     return (
@@ -256,11 +256,11 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
       <div className="fixed inset-0 opacity-10 pointer-events-none">
-        <img src="http://localhost:5001/static/large.jpg" className="absolute inset-0 w-full h-full object-cover mix-blend-overlay" />
+        <img src="http://localhost:5001/static/large.webp" className="absolute inset-0 w-full h-full object-cover mix-blend-overlay" />
       </div>
       <div className="relative z-10 container mx-auto px-6 py-12">
         <header className="text-center mb-16">
-          <h1 className="text-6xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent mb-6 animate-pulse">
+          <h1 className="text-6xl font-bold">
             EcoTraining Platform
           </h1>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">Plateforme d'entraînement avancée pour l'optimisation web et l'éco-conception</p>
@@ -296,7 +296,7 @@ export default function App() {
 
 function Card({ icon, title, value, tone, tip }: { icon: React.ReactNode; title: string; value: string | number; tone: string; tip?: string }) {
   return (
-    <div className={`backdrop-blur-lg rounded-2xl p-8 border hover:bg-white/15 hover:scale-105 transition ${tone}`} title={tip || ''}>
+    <div className={`backdrop-blur-lg rounded-2xl p-8 border transition ${tone}`} title={tip || ''}>
       <div className="flex items-center justify-between mb-4">
         {icon}
         <span className="text-3xl font-bold text-white">{value}</span>

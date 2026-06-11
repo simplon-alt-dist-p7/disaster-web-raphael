@@ -12,14 +12,13 @@ Modifications prévues : compresser et convertir les images utilisées dans un f
 
 Modifications prévues : suppression de l'animation du texte
 
-## Etape 3 - User story 8 (Téléchargement de Bootstrap en local)
+## Etape 3 - User story 8 (Gérer les styles CSS)
 
-Modifications prévues : installation de Bootstrap en local et intégration dans le projet au lieu du CDN
+Modifications prévues : déplacer la feuille de style big.css au même endroit que index.css et enlever les éléments inutiles
 
+## Etape 4 - User story 6 (Réduction du nombre d'animation et hover)
 
-## Etape 4 - User story 6 (Réduction du nombre de polices chargées)
-
-Modifications prévues : voir quelles sont les polices d'écriture utilisé pour le projet et supprimer celles qui ne le sont pas dans les feuilles de style.
+Modifications prévues : retirer les hover sur les div et réduire l'animation
 
 ## Etape 5 - User story 7 (Téléchargements des polices d'écriture)
 
@@ -32,8 +31,6 @@ Modifications prévues : réduire le nombre d'animations utilisées sur la page.
 ## Etape 7 - User story 1 (Chargement initial plus rapide)
 
 Modifications à faire : réduire la taille des ressources et le nombre d'appels effectués / lazy-loading
-
-
 
 ## Etape 8 - User story 3 (Accessibilité améliorée)
 
