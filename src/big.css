@@ -1,10 +1,10 @@
-:root {
+/* :root {
   --h: 0;
   --s: 65%;
   --l: 55%;
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "FatFont";
   src: local("Arial");
   font-weight: 400;
@@ -17,9 +17,9 @@
   50%  { transform: rotate(180deg) scale(0.9); }
   75%  { transform: rotate(270deg) scale(1.15); }
   100% { transform: rotate(360deg) scale(1); }
-}
+} */
 
-html, body, * {
+/* html, body, * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -49,11 +49,11 @@ body {
   border-radius: 50%;
   border: 32px solid hsla(0, 0%, 100%, 0.15);
   border-top-color: hsl(var(--h), var(--s), var(--l));
-  animation: spin 3s linear infinite;
+  animation: spin 10s linear infinite;
   mix-blend-mode: overlay;
-}
+} */
 
-.bg-1 { background-color: hsl(0, 65%, 30%); color: #fff; text-shadow: 0 1px 2px #000; }
+/* .bg-1 { background-color: hsl(0, 65%, 30%); color: #fff; text-shadow: 0 1px 2px #000; }
 .bg-2 { background-color: hsl(2, 65%, 30%); color: #fff; text-shadow: 0 1px 2px #000; }
 .bg-3 { background-color: hsl(4, 65%, 30%); color: #fff; text-shadow: 0 1px 2px #000; }
 .bg-4 { background-color: hsl(6, 65%, 30%); color: #fff; text-shadow: 0 1px 2px #000; }
@@ -95,17 +95,17 @@ body {
 .m-fat-2  { margin:  6rem; }
 .m-fat-3  { margin:  8rem; }
 .m-fat-4  { margin: 10rem; }
-.m-fat-5  { margin: 12rem; }
+.m-fat-5  { margin: 12rem; } */
 
-.text-xxl   { font-size: 8rem; }
-.text-xxxl  { font-size: 12rem; }
-.text-xxxxl { font-size: 16rem; }
+/* .text-xxl   { font-size: 8rem; } */
+/* .text-xxxl  { font-size: 12rem; } */
+/* .text-xxxxl { font-size: 16rem; } */
 
-.blur-fat {
+/* .blur-fat {
   filter: blur(24px) saturate(200%) brightness(150%);
-}
+} */
 
-.grain-fat::after {
+/* .grain-fat::after {
   content: "";
   position: fixed;
   inset: 0;
@@ -115,4 +115,4 @@ body {
   opacity: .15;
   will-change: transform;
   animation: spin 120s linear infinite;
-}
+} */

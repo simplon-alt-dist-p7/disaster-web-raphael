@@ -29,3 +29,6 @@ Avant :
 
 Maintenant :
 '<div className={`backdrop-blur-lg rounded-2xl p-8 border `} title={tip || ''}>'
+
+
+Dans vite.config.ts, mise en commentaire de optimiezDep pour diminuer le nombre de requête

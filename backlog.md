@@ -97,13 +97,13 @@
 
 ---
 
-### Story 8 : Centraliser le style CSS
+### Story 8 : Gérer les styles CSS
 
 **En tant que** développeur de l'application,  
-**je veux** centraliser le style CSS du frontend en un seul endroit
-**afin de** réduire le nombre d'appels au backend.
+**je veux** optimiser les feuilles de style CSS
+**afin de** réduire l'impact que ça peut avoir sur la page'.
 
-- 🎯 Objectif : réduire les appels au backend
-- 🧱 BP associée : limiter les injections du backend sur le frontend
-- 🛠️ KPI : réduction des injections backend
+- 🎯 Objectif : réduire le poids du CSS
+- 🧱 BP associée : alléger le style
+- 🛠️ KPI : alléger le code
 - Priorité : 3
